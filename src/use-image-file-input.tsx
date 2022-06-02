@@ -21,8 +21,12 @@ export function useImageFileInput() {
     <input type="file" accept="image/*" onChange={handleInput} />
   );
 
+  const ImagePreview = () =>
+    imageDataUrl ? <img src={imageDataUrl} alt="preview" /> : <></>;
+
   return {
     imageDataUrl,
-    ImageFileInput
+    ImageFileInput,
+    ImagePreview
   };
 }

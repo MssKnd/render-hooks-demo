@@ -1,12 +1,12 @@
 import { useImageFileInput } from "./use-image-file-input";
 
 export default function App() {
-  const { imageDataUrl, ImageFileInput } = useImageFileInput();
+  const { ImageFileInput, ImagePreview } = useImageFileInput();
 
   return (
     <div className="App">
       <ImageFileInput />
-      {imageDataUrl && <img src={imageDataUrl} alt="preview" />}
+      <ImagePreview />
     </div>
   );
 }
