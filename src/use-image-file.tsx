@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export function useImageFileInput() {
+export function useImageFile() {
   const [imageDataUrl, setImageDataUrl] = useState<string | null>(null);
 
   const handleInput = (changeEvent: React.ChangeEvent<HTMLInputElement>) => {
