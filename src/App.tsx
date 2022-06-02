@@ -6,7 +6,7 @@ export default function App() {
   return (
     <div className="App">
       <ImageFileInput />
-      {imageDataUrl && <img src={imageDataUrl} alt={"preview"} />}
+      {imageDataUrl && <img src={imageDataUrl} alt="preview" />}
     </div>
   );
 }
