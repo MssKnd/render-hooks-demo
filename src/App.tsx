@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./styles.css";
 
 export default function App() {
   const [value, setValue] = useState<string | null>(null);
